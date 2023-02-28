@@ -9,10 +9,10 @@ const ButtonWrapper = styled(Button)`
       ? `${theme.Colors.warning}`
       : props.variant === "yellow"
       ? `${theme.Background.gray}`
-      : `${theme.Colors.black}`};
+      : `${theme.Colors.blue}`};
   color: ${(props: ReceivedProps) =>
     props.variant === "warning"
-      ? `${theme.Colors.black}`
+      ? `${theme.Colors.blue}`
       : props.variant === "yellow"
       ? `${theme.Colors.warning}`
       : `${theme.Colors.while}`};
@@ -48,7 +48,7 @@ const ButtonWrapper = styled(Button)`
           : `${theme.Colors.while} !important`};
     color: ${(props: ReceivedProps) =>
       props.variant === "warning"
-        ? `${theme.Colors.black} !important`
+        ? `${theme.Colors.blue} !important`
         : props.variant === "yellow"
         ? `${theme.Colors.warning} !important`
         : `${theme.Colors.while} !important`};

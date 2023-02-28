@@ -5,6 +5,7 @@ const variables = {
     while: "#fff",
     warning: "#f1c94a",
     gray: "#23232e",
+    blue: "#0BB2C5",
   },
   FontSize: {
     text125: "1.25rem",

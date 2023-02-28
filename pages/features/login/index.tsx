@@ -1,11 +1,19 @@
 import { FC } from "react";
+import ButtonCf from "../../../components/button";
 import useLogin, { ReceivedProps } from "./hook";
 import LoginWrapper from "./styled";
 
 const LoginLayout: FC<ReceivedProps> = ({ props }) => {
   return (
     <LoginWrapper>
-      <h1>Home</h1>
+      <div className="login">
+        <div>
+          <ButtonCf variant="default">Log in</ButtonCf>
+          <p>
+            Not a member? <span>Register now</span>
+          </p>
+        </div>
+      </div>
     </LoginWrapper>
   );
 };
