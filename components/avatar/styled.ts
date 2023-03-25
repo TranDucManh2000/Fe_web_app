@@ -6,6 +6,7 @@ const AvatarWrapper = styled.div`
   background: ${(props: ReceivedProps) =>
     props.variant === "default" ? "" : ""};
   .meta {
+    cursor: pointer;
     display: flex;
     align-items: center;
     .ant-card-meta-title {

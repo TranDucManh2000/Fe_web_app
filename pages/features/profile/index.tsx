@@ -32,6 +32,7 @@ const ProfileLayout: FC<ReceivedProps> = ({ props, onChange }) => {
     <ProfileWrapper>
       <div className="trip_profile_container">
         <AvatarNft
+          title="Tran Manh"
           dataImg={
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEmgoJ7d7XLyOghKabgkvM9zrEAzga4jrq1bMvj88&s"
           }
@@ -47,7 +48,9 @@ const ProfileLayout: FC<ReceivedProps> = ({ props, onChange }) => {
           <span>5</span>
           <span>5 Following</span>
         </div>
-        <div className="item_title">Thích thì đi thôi</div>
+        <div className="item_title">
+          <span>Thích thì đi thôi</span>
+        </div>
         <div className="item_title">
           <ButtonCf>Follow</ButtonCf>
           <ButtonCf>...</ButtonCf>

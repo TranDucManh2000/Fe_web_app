@@ -9,8 +9,10 @@ const TripWrapper = styled.div`
   .trip_container {
     max-width: 1200px;
     .img_container {
+      margin-top: 20px;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
     }
   }
 `;

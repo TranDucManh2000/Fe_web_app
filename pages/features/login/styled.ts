@@ -15,6 +15,7 @@ const LoginWrapper = styled.div`
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    min-width: 450px;
   }
 `;
 

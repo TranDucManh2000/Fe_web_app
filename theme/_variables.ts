@@ -6,6 +6,7 @@ const variables = {
     warning: "#f1c94a",
     gray: "#23232e",
     blue: "#0BB2C5",
+    blue1: "#F1FCFE",
   },
   FontSize: {
     text125: "1.25rem",

@@ -10,6 +10,7 @@ const ProfileWrapper = styled.div`
     align-items: center;
     padding: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     .item_container {
       display: flex;
       flex-wrap: wrap;
@@ -21,6 +22,7 @@ const ProfileWrapper = styled.div`
     .item_title {
       width: 100%;
       display: flex;
+      justify-content: center;
     }
     .trip_item {
       padding: 15px;

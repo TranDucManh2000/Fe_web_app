@@ -12,13 +12,11 @@ const LoginLayout: FC<ReceivedProps> = ({
   const items: TabsProps["items"] = [
     {
       key: "1",
-      label: `login`,
+      label: `Login`,
       children: (
         <div>
           <Form
             name="basic"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 16 }}
             style={{ maxWidth: 600 }}
             initialValues={{ remember: true }}
             onFinish={onFinish}
@@ -26,34 +24,30 @@ const LoginLayout: FC<ReceivedProps> = ({
             autoComplete="off"
           >
             <Form.Item
-              label="Username"
               name="username"
               rules={[
                 { required: true, message: "Please input your username!" },
               ]}
             >
+              <p>Username</p>
               <Input />
             </Form.Item>
 
             <Form.Item
-              label="Password"
               name="password"
               rules={[
                 { required: true, message: "Please input your password!" },
               ]}
             >
+              <p>Password</p>
               <Input.Password />
             </Form.Item>
 
-            <Form.Item
-              name="remember"
-              valuePropName="checked"
-              wrapperCol={{ offset: 8, span: 16 }}
-            >
+            <Form.Item name="remember" valuePropName="checked">
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item>
               <Button type="primary" htmlType="submit">
                 Submit
               </Button>
@@ -64,14 +58,11 @@ const LoginLayout: FC<ReceivedProps> = ({
     },
     {
       key: "2",
-      label: `register`,
+      label: `Register`,
       children: (
         <div>
-          {" "}
           <Form
             name="basic"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 16 }}
             style={{ maxWidth: 600 }}
             initialValues={{ remember: true }}
             onFinish={onFinish}
@@ -79,34 +70,36 @@ const LoginLayout: FC<ReceivedProps> = ({
             autoComplete="off"
           >
             <Form.Item
-              label="Username"
               name="username"
               rules={[
                 { required: true, message: "Please input your username!" },
               ]}
             >
+              <p>Username</p>
               <Input />
             </Form.Item>
 
             <Form.Item
-              label="Password"
               name="password"
               rules={[
                 { required: true, message: "Please input your password!" },
               ]}
             >
+              <p>Password</p>
               <Input.Password />
             </Form.Item>
 
             <Form.Item
-              name="remember"
-              valuePropName="checked"
-              wrapperCol={{ offset: 8, span: 16 }}
+              name="thePassword"
+              rules={[
+                { required: true, message: "Please input your password!" },
+              ]}
             >
-              <Checkbox>Remember me</Checkbox>
+              <p>Enter the password</p>
+              <Input.Password />
             </Form.Item>
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item>
               <Button type="primary" htmlType="submit">
                 Submit
               </Button>

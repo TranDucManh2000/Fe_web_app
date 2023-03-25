@@ -12,12 +12,13 @@ const NavbarLayout: FC<ReceivedProps> = ({ props }) => {
   return (
     <NavbarWrapper>
       <div>
-        <Image
+        {/* <Image
           preview={false}
           src="https://loobr.com/assets/images/loobr.svg"
           width={150}
           height={75}
-        />
+        /> */}
+        <h1>Backpacking</h1>
         <div>
           <span className="text">manh</span>
         </div>
